@@ -13,9 +13,10 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 const LogoWithFallback = ({ src, name }: { src: string; name: string }) => {
     const [hasError, setHasError] = useState(false);
 
-    if (hasError) {
+    // If no icon provided or error loading, show letter badge
+    if (!src || hasError) {
         return (
-            <div className="w-8 h-8 md:w-10 md:h-10 bg-background-light rounded-lg flex items-center justify-center">
+            <div className="w-8 h-8 md:w-10 md:h-10 bg-primary/20 rounded-lg flex items-center justify-center border border-primary/30">
                 <span className="text-primary text-sm md:text-base font-bold">
                     {name.charAt(0)}
                 </span>

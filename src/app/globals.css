@@ -1,17 +1,17 @@
 @import "tailwindcss";
 
 @theme {
-  --color-background: hsl(0 0% 4%);
-  --color-background-light: hsl(0 0% 10%);
+  --color-background: #2D2D2D;
+  --color-background-light: #3A3A3A;
   --color-foreground: hsl(0 0% 87%);
-  --color-primary: hsl(120 100% 50%);
-  --color-primary-foreground: hsl(0 0% 4%);
+  --color-primary: #00FF66;
+  --color-primary-foreground: #1a1a1a;
   --color-secondary: hsl(193 100% 47%);
   --color-secondary-foreground: hsl(0 0% 4%);
-  --color-muted: hsl(0 0% 14.9%);
+  --color-muted: #3A3A3A;
   --color-muted-foreground: hsl(0 0% 63.9%);
-  --color-border: hsl(0 0% 20%);
-  --color-card: hsl(0 0% 3.9%);
+  --color-border: #4A4A4A;
+  --color-card: #252525;
   --color-card-foreground: hsl(0 0% 98%);
   --font-anton: 'Anton', sans-serif;
   --font-roboto-flex: 'Roboto Flex', sans-serif;

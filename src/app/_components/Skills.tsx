@@ -4,9 +4,36 @@ import { MY_STACK } from '@/lib/data';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/all';
-import { useRef } from 'react';
+import Image from 'next/image';
+import { useRef, useState } from 'react';
 
 gsap.registerPlugin(ScrollTrigger, useGSAP);
+
+// Fallback component for missing images
+const LogoWithFallback = ({ src, name }: { src: string; name: string }) => {
+    const [hasError, setHasError] = useState(false);
+
+    if (hasError) {
+        return (
+            <div className="w-8 h-8 md:w-10 md:h-10 bg-background-light rounded-lg flex items-center justify-center">
+                <span className="text-primary text-sm md:text-base font-bold">
+                    {name.charAt(0)}
+                </span>
+            </div>
+        );
+    }
+
+    return (
+        <Image
+            src={src}
+            alt={name}
+            width={40}
+            height={40}
+            className="w-8 h-8 md:w-10 md:h-10 object-contain"
+            onError={() => setHasError(true)}
+        />
+    );
+};
 
 const Skills = () => {
     const containerRef = useRef<HTMLDivElement>(null);
@@ -73,14 +100,10 @@ const Skills = () => {
                             <div className="sm:col-span-8 flex gap-x-8 gap-y-6 md:gap-x-11 md:gap-y-9 flex-wrap">
                                 {value.map((item) => (
                                     <div
-                                        className="slide-up flex gap-3 items-center leading-none"
+                                        className="slide-up flex gap-3.5 items-center leading-none"
                                         key={item.name}
                                     >
-                                        <div className="w-8 h-8 md:w-10 md:h-10 bg-background-light rounded-lg flex items-center justify-center">
-                                            <span className="text-primary text-sm md:text-base font-bold">
-                                                {item.name.charAt(0)}
-                                            </span>
-                                        </div>
+                                        <LogoWithFallback src={item.icon} name={item.name} />
                                         <span className="text-lg md:text-2xl capitalize">
                                             {item.name}
                                         </span>

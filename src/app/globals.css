@@ -1,26 +1,88 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-background: hsl(0 0% 4%);
+  --color-background-light: hsl(0 0% 10%);
+  --color-foreground: hsl(0 0% 87%);
+  --color-primary: hsl(120 100% 50%);
+  --color-primary-foreground: hsl(0 0% 4%);
+  --color-secondary: hsl(193 100% 47%);
+  --color-secondary-foreground: hsl(0 0% 4%);
+  --color-muted: hsl(0 0% 14.9%);
+  --color-muted-foreground: hsl(0 0% 63.9%);
+  --color-border: hsl(0 0% 20%);
+  --color-card: hsl(0 0% 3.9%);
+  --color-card-foreground: hsl(0 0% 98%);
+  --font-anton: 'Anton', sans-serif;
+  --font-roboto-flex: 'Roboto Flex', sans-serif;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+::-webkit-scrollbar {
+  display: none;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  scrollbar-width: none;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-roboto-flex);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Container utility */
+.container {
+  max-width: 1148px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Section spacing */
+.pb-section {
+  padding-bottom: 150px;
+}
+
+.py-section {
+  padding-top: 150px;
+  padding-bottom: 150px;
+}
+
+@media (min-width: 768px) {
+  .pb-section {
+    padding-bottom: 250px;
+  }
+
+  .py-section {
+    padding-top: 250px;
+    padding-bottom: 250px;
+  }
+}
+
+/* Smooth scrolling for lenis */
+html.lenis,
+html.lenis body {
+  height: auto;
+}
+
+.lenis.lenis-smooth {
+  scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+  overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+  overflow: hidden;
+}
+
+.lenis.lenis-smooth iframe {
+  pointer-events: none;
 }

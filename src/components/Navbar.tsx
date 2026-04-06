@@ -13,9 +13,10 @@ const COLORS = [
 ];
 
 const MENU_LINKS = [
-    { name: 'Home', url: '#banner' },
-    { name: 'About Me', url: '#about-me' },
+    { name: 'Education', url: '#education' },
+    { name: 'Hackathons', url: '#hackathons' },
     { name: 'Experience', url: '#my-experience' },
+    { name: 'Startup', url: '#startup' },
     { name: 'Projects', url: '#selected-projects' },
 ];
 

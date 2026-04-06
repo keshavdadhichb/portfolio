@@ -80,8 +80,9 @@ const AboutMe = () => {
                             <p className="mt-3 slide-up-and-fade">
                                 My approach focuses on creating scalable,
                                 high-performing solutions tailored to both technical
-                                requirements and real user needs. From winning national
-                                hackathons to filing a patent, I focus on creating
+                                requirements and real user needs. From winning 3 national
+                                hackathons (all 1st place) to publishing a patent
+                                and launching a startup, I focus on creating
                                 solutions that are both innovative and impactful.
                             </p>
                         </div>

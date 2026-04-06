@@ -28,8 +28,8 @@ const robotoFlex = Roboto_Flex({
 
 export const metadata: Metadata = {
   title: 'Keshav Dadhich | Software Engineer',
-  description: 'Computer Science undergraduate at VIT Vellore with expertise in full-stack engineering, blockchain protocols, and AI systems. Winner of national hackathons with a patent-pending safety system.',
-  keywords: ['Keshav Dadhich', 'Software Engineer', 'Full Stack Developer', 'AI/ML', 'Blockchain', 'VIT Vellore'],
+  description: 'Computer Science undergraduate at VIT Vellore with expertise in full-stack engineering, blockchain protocols, and AI systems. 3x national hackathon winner (all 1st place) with a published patent and a live startup.',
+  keywords: ['Keshav Dadhich', 'Software Engineer', 'Full Stack Developer', 'AI/ML', 'Blockchain', 'VIT Vellore', 'Startup', 'Patent'],
   authors: [{ name: 'Keshav Dadhich' }],
   openGraph: {
     title: 'Keshav Dadhich | Software Engineer',

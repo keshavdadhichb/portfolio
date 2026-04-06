@@ -71,7 +71,7 @@ export const PROJECTS: IProject[] = [
         sourceCode: 'https://github.com/keshavdadhichb/GuardianAI',
         year: 2025,
         description: `Proactive Personal Safety System with Multi-Modal AI for distress detection. Features autonomous threat evaluation, blockchain evidence logging, and real-time emergency alerts.`,
-        award: '🏆 1st Prize - InnovAct-2025 at VIT | Patent Filed',
+        award: '🏆 1st Prize - InnovAct-2025 at VIT | Patent Published',
     },
     {
         title: 'Citadel',
@@ -83,6 +83,17 @@ export const PROJECTS: IProject[] = [
         year: 2025,
         description: `Zero-Knowledge Loan Verification Protocol with hybrid microservices architecture. Features privacy-first NLP engine for PII redaction and immutable blockchain audit trail.`,
         award: '🏆 1st Prize - Vitality\'25 National Hackathon by GeeksForGeeks',
+    },
+    {
+        title: 'Mapped',
+        slug: 'mapped',
+        techStack: ['Python FastAPI', 'React', 'Graph Algorithms', 'Gen AI'],
+        thumbnail: '/projects/mapped.jpg',
+        liveUrl: 'https://mapped-theta.vercel.app/',
+        sourceCode: 'https://github.com/keshavdadhichb/mapped',
+        year: 2026,
+        description: `Skill-gap analysis engine that ingests resumes and job descriptions, extracts skills against an O*NET taxonomy of 85+ competencies, performs quantitative gap analysis, and computes the shortest prerequisite-respecting learning path through 70+ curated courses using a fully deterministic graph algorithm.`,
+        award: '🏆 Finalist - IISc National Hackathon',
     },
     {
         title: 'Unidash',
@@ -104,6 +115,35 @@ export const PROJECTS: IProject[] = [
         year: 2025,
         description: `Community Book-Lending Platform with unique terminal-style UI. Unified REST API with Google OAuth 2.0 for university domain authentication. 200+ active users.`,
         award: '📈 200+ Active Users',
+    },
+    {
+        title: 'SnapCatalog',
+        slug: 'snapcatalog',
+        techStack: ['Next.js', 'AI Generation', 'Cloud', 'SaaS'],
+        thumbnail: '/projects/snapcatalog.jpg',
+        liveUrl: 'https://www.snapcatalog.in/',
+        year: 2026,
+        description: `Catalog generation startup where businesses create professional catalogs and fashion editorials for marketing campaigns, print media, and websites. Generates side revenue as a live SaaS product.`,
+        award: '🚀 Startup - Live Product',
+    },
+    {
+        title: 'LegalBridge',
+        slug: 'legalbridge',
+        techStack: ['Next.js', 'Gemini AI', 'WebSocket', 'Node.js'],
+        thumbnail: '/projects/legalbridge.jpg',
+        sourceCode: 'https://github.com/keshavdadhichb/legalbridge',
+        year: 2026,
+        description: `AI-powered legal platform that resolves disputes using intelligent agents and creates virtual courtrooms for issue resolution. Features real-time negotiation, AI-driven legal analysis, and a premium "Living Case File" experience.`,
+    },
+    {
+        title: 'Bridge',
+        slug: 'bridge',
+        techStack: ['Python', 'TensorFlow', 'MediaPipe', 'React'],
+        thumbnail: '/projects/bridge.jpg',
+        sourceCode: 'https://github.com/keshavdadhichb/Bridge',
+        year: 2026,
+        description: `Accessibility platform for deaf and hard-of-hearing individuals featuring real-time conversation tools, a custom-trained ML model for hand gesture tracking and translation, and a specialized Indian Sign Language learning platform for fostering workplace and educational inclusivity.`,
+        award: '🏆 1st Prize - InnoHack\'26',
     },
     {
         title: 'EvalOCR',
@@ -179,7 +219,8 @@ export const OPEN_SOURCE = [
 ];
 
 export const ACHIEVEMENTS = [
-    { title: 'Patent Filed', description: 'Intellectual Property for GuardianAI (Proactive Personal Safety System)' },
+    { title: 'Patent Published', description: 'Intellectual Property for GuardianAI (Proactive Personal Safety System)' },
+    { title: '1st Prize - InnoHack\'26', description: 'National Level Hackathon – Bridge (Accessibility Platform)' },
     { title: '1st Prize - Vitality\'25', description: 'National Level Hackathon by GeeksForGeeks' },
     { title: '1st Prize - InnovAct-2025', description: 'Hackathon at VIT Vellore' },
     { title: 'Oracle Cloud Certified', description: 'OCI 2025 Certified Generative AI Professional' },

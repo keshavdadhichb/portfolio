@@ -47,23 +47,22 @@ const Banner = () => {
     return (
         <section className="relative overflow-hidden" id="banner">
             <div
-                className="container h-[100svh] min-h-[530px] max-md:pb-10 flex justify-between items-center max-md:flex-col"
+                className="container h-[100svh] min-h-[600px] max-md:pb-10 flex flex-col justify-center items-center"
                 ref={containerRef}
             >
                 <div
-                    className="max-md:grow max-md:flex flex-col justify-center items-start max-w-[544px] transition-transform duration-200 ease-out"
+                    className="w-full max-w-[900px] text-center transition-transform duration-200 ease-out"
                     style={{
                         transform: `translate(${mousePosition.x * 0.5}px, ${mousePosition.y * 0.5}px)`,
                     }}
                 >
-                    <h1 className="banner-title slide-up-and-fade leading-[.95] text-5xl sm:text-[70px] md:text-[80px] font-anton">
-                        {/* Gradient text effect */}
+                    <h1 className="banner-title slide-up-and-fade leading-[.95] text-5xl sm:text-[70px] md:text-[90px] font-anton">
                         <span className="bg-gradient-to-r from-primary via-green-400 to-primary bg-[length:200%_auto] animate-gradient bg-clip-text text-transparent">
                             SOFTWARE
                         </span>
                         <br /> <span className="ml-4">ENGINEER</span>
                     </h1>
-                    <p className="banner-description slide-up-and-fade mt-6 text-lg text-muted-foreground">
+                    <p className="banner-description slide-up-and-fade mt-6 text-lg text-muted-foreground max-w-[560px] mx-auto">
                         Hi! I&apos;m{' '}
                         <span className="font-medium text-foreground">
                             Keshav Dadhich
@@ -72,45 +71,17 @@ const Banner = () => {
                         scalable systems in AI/ML, Blockchain, and Full-Stack
                         Development.
                     </p>
-                    <Button
-                        as="link"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        href={`mailto:${GENERAL_INFO.email}`}
-                        variant="primary"
-                        className="mt-9 banner-button slide-up-and-fade"
-                    >
-                        Get in Touch
-                    </Button>
-                </div>
-
-                <div
-                    className="md:absolute bottom-[10%] right-[4%] flex md:flex-col gap-4 md:gap-8 text-center md:text-right transition-transform duration-200 ease-out"
-                    style={{
-                        transform: `translate(${mousePosition.x * -0.3}px, ${mousePosition.y * -0.3}px)`,
-                    }}
-                >
-                    <div className="slide-up-and-fade">
-                        <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            VIT &apos;27
-                        </h5>
-                        <p className="text-muted-foreground">
-                            B.Tech CSE
-                        </p>
-                    </div>
-                    <div className="slide-up-and-fade">
-                        <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            2x
-                        </h5>
-                        <p className="text-muted-foreground">
-                            Hackathon Winner
-                        </p>
-                    </div>
-                    <div className="slide-up-and-fade">
-                        <h5 className="text-3xl sm:text-4xl font-anton text-primary mb-1.5">
-                            1
-                        </h5>
-                        <p className="text-muted-foreground">Patent Filed</p>
+                    <div className="mt-9 slide-up-and-fade flex justify-center">
+                        <Button
+                            as="link"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            href={`mailto:${GENERAL_INFO.email}`}
+                            variant="primary"
+                            className="banner-button"
+                        >
+                            Get in Touch
+                        </Button>
                     </div>
                 </div>
             </div>
